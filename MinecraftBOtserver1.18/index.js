@@ -61,9 +61,8 @@ bot.on('time', function(time) {
 
 		
 	if(nightskip == "true"){
-	if(bot.time.timeOfDay >= 13000){
 	bot.chat('/weather clear')
-	}}
+	}
     if (connected <1) {
         return;
     }
@@ -73,9 +72,9 @@ bot.on('time', function(time) {
         var randomadd = Math.random() * maxrandom * 20;
         var interval = moveinterval*20 + randomadd;
         if (bot.time.age - lasttime > interval) {
-            if (moving == 1) {
+            if (moving = 1) {
                 bot.setControlState(lastaction,true);
-                moving = 0;
+                moving = 1;
                 lasttime = bot.time.age;
             } else {
                 var yaw = Math.random()*pi - (0.5*pi);
