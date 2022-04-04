@@ -62,7 +62,7 @@ bot.on('time', function(time) {
 		
 	if(nightskip == "true"){
 	if(bot.time.timeOfDay >= 13000){
-	bot.chat('/SORYE!')
+	bot.chat('SORYE!')
 	}}
     if (connected <1) {
         return;
