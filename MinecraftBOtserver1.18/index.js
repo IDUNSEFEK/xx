@@ -67,7 +67,7 @@ bot.on('time', function(time) {
     if (connected <1) {
         return;
     }
-    if (lasttime<0) {
+    if (lasttime <0) {
         lasttime = bot.time.age;
     } else {
         var randomadd = Math.random() * maxrandom * 20;
