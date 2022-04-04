@@ -1,0 +1,9 @@
+{
+	"ip":"kamujawa.aternos.me",
+	"port": "43083",
+	"name": "penjaga_lilin",
+	"auto-night-skip":"true",
+	"login-enabled":"true",
+	"register-cmd":"/register pass123 ",
+	"login-cmd":"/login pass123 "
+}
