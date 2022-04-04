@@ -61,7 +61,7 @@ bot.on('time', function(time) {
 
 		
 	if(nightskip == "true"){
-	bot.chat('/weather clear')
+	bot.chat('/sorye ge ton')
 	}
     if (connected <1) {
         return;
@@ -71,7 +71,7 @@ bot.on('time', function(time) {
     } else {
         var randomadd = Math.random() * maxrandom * 20;
         var interval = moveinterval*20 + randomadd;
-        if (bot.time.age - lasttime > interval) {
+        if (bot.time.age - lasttime < interval) {
             if (moving = 1) {
                 bot.setControlState(lastaction,true);
                 moving = 1;
