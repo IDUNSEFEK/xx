@@ -62,7 +62,7 @@ bot.on('time', function(time) {
 		
 	if(nightskip == "true"){
 	if(bot.time.timeOfDay >= 13000){
-	bot.chat('SORYE!')
+	bot.chat('/weather clear')
 	}}
     if (connected <1) {
         return;
@@ -74,8 +74,8 @@ bot.on('time', function(time) {
         var interval = moveinterval*20 + randomadd;
         if (bot.time.age - lasttime > interval) {
             if (moving == 1) {
-                bot.setControlState(lastaction,false);
-                moving = 0;
+                bot.setControlState(lastaction,true);
+                moving == 0;
                 lasttime = bot.time.age;
             } else {
                 var yaw = Math.random()*pi - (0.5*pi);
@@ -92,7 +92,7 @@ bot.on('time', function(time) {
 });
 
 bot.on('spawn',function() {
-    connected=1;
+    connected=0;
 });
 
 bot.on('death',function() {
