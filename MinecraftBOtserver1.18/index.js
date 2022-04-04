@@ -75,7 +75,7 @@ bot.on('time', function(time) {
         if (bot.time.age - lasttime > interval) {
             if (moving == 1) {
                 bot.setControlState(lastaction,true);
-                moving == 0;
+                moving = 0;
                 lasttime = bot.time.age;
             } else {
                 var yaw = Math.random()*pi - (0.5*pi);
